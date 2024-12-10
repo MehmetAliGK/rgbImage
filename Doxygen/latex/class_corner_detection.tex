@@ -1,0 +1,172 @@
+\doxysection{Corner\+Detection Class Reference}
+\hypertarget{class_corner_detection}{}\label{class_corner_detection}\index{CornerDetection@{CornerDetection}}
+
+
+{\ttfamily \#include $<$Corner\+Detection.\+h$>$}
+
+Inheritance diagram for Corner\+Detection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_corner_detection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_corner_detection_a30d600070cd7683341aa86a99515ba58}{Corner\+Detection}} ()
+\item 
+\mbox{\hyperlink{class_corner_detection_a0ee0191a68b4dfee5b2c40331b647f6e}{\texorpdfstring{$\sim$}{\string~}\+Corner\+Detection}} () override
+\item 
+void \mbox{\hyperlink{class_corner_detection_a0a058ef0f622d2eeff75175bd078c15b}{detect\+Features}} (const Mat \&image) override
+\item 
+void \mbox{\hyperlink{class_corner_detection_a32fff8db5fb6ff0db8b441313d9c5e45}{write\+Features}} (const string \&filename) const override
+\item 
+void \mbox{\hyperlink{class_corner_detection_aef1e1c9673a217360678f3e53156607c}{display\+Features}} () const override
+\item 
+int \mbox{\hyperlink{class_corner_detection_a543238860affc6137c7c7c3e997a3872}{get\+Block\+Size}} () const
+\item 
+double \mbox{\hyperlink{class_corner_detection_a5aa54fce0bb6c1099dc6ee25af588f65}{getK}} () const
+\item 
+int \mbox{\hyperlink{class_corner_detection_a9d1e71bcb889d6314de0eeb57d95925a}{get\+Threshold}} () const
+\item 
+void \mbox{\hyperlink{class_corner_detection_a360ba7cfd8349cdcbe7d39ca4a9a687c}{set\+Block\+Size}} (int \mbox{\hyperlink{class_corner_detection_a43a181157ab48577e2df749a31e5b739}{block\+Size}})
+\item 
+void \mbox{\hyperlink{class_corner_detection_acc4878eb18d124c68f0cbad6143cd199}{setK}} (double \mbox{\hyperlink{class_corner_detection_aade49ebdb253d082482c2069a991899f}{k}})
+\item 
+void \mbox{\hyperlink{class_corner_detection_a710fda68948e31055be82df8b39a3bd8}{set\+Threshold}} (int \mbox{\hyperlink{class_corner_detection_a507857d64406bd2ac5a3589d965e2f08}{threshold}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_detection}{Detection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_detection_ae6896c01a66af0ea946a1399a4749450}{Detection}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_detection_adefd1e376a1986e648ba96749c8b49d3}{\texorpdfstring{$\sim$}{\string~}\+Detection}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_corner_detection_a43a181157ab48577e2df749a31e5b739}{block\+Size}}
+\item 
+double \mbox{\hyperlink{class_corner_detection_aade49ebdb253d082482c2069a991899f}{k}}
+\item 
+int \mbox{\hyperlink{class_corner_detection_a507857d64406bd2ac5a3589d965e2f08}{threshold}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_detection}{Detection}}}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ Vec4i $>$ \mbox{\hyperlink{class_detection_ac615247d29736fa601143f1c9deba5d2}{features}}
+\item 
+Mat \mbox{\hyperlink{class_detection_af8e357f77ac9dd05895b3b17d54494d9}{image\+With\+Features}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_corner_detection_a30d600070cd7683341aa86a99515ba58}\label{class_corner_detection_a30d600070cd7683341aa86a99515ba58} 
+\index{CornerDetection@{CornerDetection}!CornerDetection@{CornerDetection}}
+\index{CornerDetection@{CornerDetection}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{CornerDetection()}{CornerDetection()}}
+{\footnotesize\ttfamily Corner\+Detection\+::\+Corner\+Detection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_corner_detection_a0ee0191a68b4dfee5b2c40331b647f6e}\label{class_corner_detection_a0ee0191a68b4dfee5b2c40331b647f6e} 
+\index{CornerDetection@{CornerDetection}!````~CornerDetection@{\texorpdfstring{$\sim$}{\string~}CornerDetection}}
+\index{````~CornerDetection@{\texorpdfstring{$\sim$}{\string~}CornerDetection}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CornerDetection()}{\string~CornerDetection()}}
+{\footnotesize\ttfamily Corner\+Detection\+::\texorpdfstring{$\sim$}{\string~}\+Corner\+Detection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_corner_detection_a0a058ef0f622d2eeff75175bd078c15b}\label{class_corner_detection_a0a058ef0f622d2eeff75175bd078c15b} 
+\index{CornerDetection@{CornerDetection}!detectFeatures@{detectFeatures}}
+\index{detectFeatures@{detectFeatures}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{detectFeatures()}{detectFeatures()}}
+{\footnotesize\ttfamily void Corner\+Detection\+::detect\+Features (\begin{DoxyParamCaption}\item[{const Mat \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_detection_a8698e878994d59fd27019fe0fac6e711}{Detection}}.
+
+\Hypertarget{class_corner_detection_aef1e1c9673a217360678f3e53156607c}\label{class_corner_detection_aef1e1c9673a217360678f3e53156607c} 
+\index{CornerDetection@{CornerDetection}!displayFeatures@{displayFeatures}}
+\index{displayFeatures@{displayFeatures}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{displayFeatures()}{displayFeatures()}}
+{\footnotesize\ttfamily void Corner\+Detection\+::display\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_detection_a83db3aaacb49e1198596a29abce5a92e}{Detection}}.
+
+\Hypertarget{class_corner_detection_a543238860affc6137c7c7c3e997a3872}\label{class_corner_detection_a543238860affc6137c7c7c3e997a3872} 
+\index{CornerDetection@{CornerDetection}!getBlockSize@{getBlockSize}}
+\index{getBlockSize@{getBlockSize}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{getBlockSize()}{getBlockSize()}}
+{\footnotesize\ttfamily int Corner\+Detection\+::get\+Block\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_corner_detection_a5aa54fce0bb6c1099dc6ee25af588f65}\label{class_corner_detection_a5aa54fce0bb6c1099dc6ee25af588f65} 
+\index{CornerDetection@{CornerDetection}!getK@{getK}}
+\index{getK@{getK}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{getK()}{getK()}}
+{\footnotesize\ttfamily double Corner\+Detection\+::getK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_corner_detection_a9d1e71bcb889d6314de0eeb57d95925a}\label{class_corner_detection_a9d1e71bcb889d6314de0eeb57d95925a} 
+\index{CornerDetection@{CornerDetection}!getThreshold@{getThreshold}}
+\index{getThreshold@{getThreshold}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{getThreshold()}{getThreshold()}}
+{\footnotesize\ttfamily int Corner\+Detection\+::get\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_corner_detection_a360ba7cfd8349cdcbe7d39ca4a9a687c}\label{class_corner_detection_a360ba7cfd8349cdcbe7d39ca4a9a687c} 
+\index{CornerDetection@{CornerDetection}!setBlockSize@{setBlockSize}}
+\index{setBlockSize@{setBlockSize}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{setBlockSize()}{setBlockSize()}}
+{\footnotesize\ttfamily void Corner\+Detection\+::set\+Block\+Size (\begin{DoxyParamCaption}\item[{int}]{block\+Size }\end{DoxyParamCaption})}
+
+\Hypertarget{class_corner_detection_acc4878eb18d124c68f0cbad6143cd199}\label{class_corner_detection_acc4878eb18d124c68f0cbad6143cd199} 
+\index{CornerDetection@{CornerDetection}!setK@{setK}}
+\index{setK@{setK}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{setK()}{setK()}}
+{\footnotesize\ttfamily void Corner\+Detection\+::setK (\begin{DoxyParamCaption}\item[{double}]{k }\end{DoxyParamCaption})}
+
+\Hypertarget{class_corner_detection_a710fda68948e31055be82df8b39a3bd8}\label{class_corner_detection_a710fda68948e31055be82df8b39a3bd8} 
+\index{CornerDetection@{CornerDetection}!setThreshold@{setThreshold}}
+\index{setThreshold@{setThreshold}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{setThreshold()}{setThreshold()}}
+{\footnotesize\ttfamily void Corner\+Detection\+::set\+Threshold (\begin{DoxyParamCaption}\item[{int}]{threshold }\end{DoxyParamCaption})}
+
+\Hypertarget{class_corner_detection_a32fff8db5fb6ff0db8b441313d9c5e45}\label{class_corner_detection_a32fff8db5fb6ff0db8b441313d9c5e45} 
+\index{CornerDetection@{CornerDetection}!writeFeatures@{writeFeatures}}
+\index{writeFeatures@{writeFeatures}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{writeFeatures()}{writeFeatures()}}
+{\footnotesize\ttfamily void Corner\+Detection\+::write\+Features (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_detection_a2591cff32dc48a96aabbcd2a08a9b55c}{Detection}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_corner_detection_a43a181157ab48577e2df749a31e5b739}\label{class_corner_detection_a43a181157ab48577e2df749a31e5b739} 
+\index{CornerDetection@{CornerDetection}!blockSize@{blockSize}}
+\index{blockSize@{blockSize}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{blockSize}{blockSize}}
+{\footnotesize\ttfamily int Corner\+Detection\+::block\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_corner_detection_aade49ebdb253d082482c2069a991899f}\label{class_corner_detection_aade49ebdb253d082482c2069a991899f} 
+\index{CornerDetection@{CornerDetection}!k@{k}}
+\index{k@{k}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily double Corner\+Detection\+::k\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_corner_detection_a507857d64406bd2ac5a3589d965e2f08}\label{class_corner_detection_a507857d64406bd2ac5a3589d965e2f08} 
+\index{CornerDetection@{CornerDetection}!threshold@{threshold}}
+\index{threshold@{threshold}!CornerDetection@{CornerDetection}}
+\doxysubsubsection{\texorpdfstring{threshold}{threshold}}
+{\footnotesize\ttfamily int Corner\+Detection\+::threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_corner_detection_8h}{Corner\+Detection.\+h}}\item 
+\mbox{\hyperlink{_corner_detection_8cpp}{Corner\+Detection.\+cpp}}\end{DoxyCompactItemize}

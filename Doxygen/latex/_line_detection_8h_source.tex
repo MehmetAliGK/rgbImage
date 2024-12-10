@@ -1,0 +1,37 @@
+\doxysection{Line\+Detection.\+h}
+\hypertarget{_line_detection_8h_source}{}\label{_line_detection_8h_source}\mbox{\hyperlink{_line_detection_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LINEDETECTION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LINEDETECTION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_detection_8h}{Detection.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <opencv2/core/mat.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_line_detection}{LineDetection}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_detection}{Detection}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_line_detection_a1ef7eac86d7b5b23b967cf48880eb991}{LineDetection}}();}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_line_detection_a654e5c9c3aec724b10a4f2efdd82b3c5}{\string~LineDetection}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_detection_ad270506091026985ee9d4e4cf75bedc6}{detectFeatures}}(\textcolor{keyword}{const}\ cv::Mat\&\ image)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_detection_a6ae65f13932d7648185fbfde6285d4c3}{writeFeatures}}(\textcolor{keyword}{const}\ std::string\&\ filename)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_detection_a0742644570982ae229f8d8ecf90f4238}{displayFeatures}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_aaeac405cc8f3114dd78dfecb66fafe7d}{getLowThreshold}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_ab5f7aa9e55a1e83af188e7f29d301998}{getHighThreshold}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_ab676ff4c61271fc65ad377ba3347934a}{getKernelSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_detection_ab158cec8fb01b19f9126529a0b39341a}{setLowThreshold}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_a243103cc7896bd1663809cda7eba2600}{lowThreshold}});}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_detection_ad84d1afd57e4cb4107a3c25a64e4ea9b}{setHighThreshold}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_ab77641a0129f8284d64f0482c35d8d57}{highThreshold}});}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_detection_a29afe504432ad0173ef0af2fe4a74bf0}{setKernelSize}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_ac0678add9ca77e61e98968b45c67c04f}{kernelSize}});}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_detection_a694357ee1cd1e5916fd0b22a952c4fb5}{TrackbarCallback}}(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{void}*\ userdata);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_line_detection_ac19780252886730677c6d537f9fe51d4}{detectFeaturesWithTrackbar}}(\textcolor{keyword}{const}\ Mat\&\ \mbox{\hyperlink{class_line_detection_af18ca3768d4cfe23fd2f83e6e3b7eeb2}{inputImage}});}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_a243103cc7896bd1663809cda7eba2600}{lowThreshold}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_ab77641a0129f8284d64f0482c35d8d57}{highThreshold}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_line_detection_ac0678add9ca77e61e98968b45c67c04f}{kernelSize}};}
+\DoxyCodeLine{00029\ \ \ \ \ Mat\ \mbox{\hyperlink{class_line_detection_af18ca3768d4cfe23fd2f83e6e3b7eeb2}{inputImage}};}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LINEDETECTION\_H}}
+
+\end{DoxyCode}

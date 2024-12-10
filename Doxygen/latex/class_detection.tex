@@ -1,0 +1,101 @@
+\doxysection{Detection Class Reference}
+\hypertarget{class_detection}{}\label{class_detection}\index{Detection@{Detection}}
+
+
+{\ttfamily \#include $<$Detection.\+h$>$}
+
+Inheritance diagram for Detection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_detection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_detection_ae6896c01a66af0ea946a1399a4749450}{Detection}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_detection_adefd1e376a1986e648ba96749c8b49d3}{\texorpdfstring{$\sim$}{\string~}\+Detection}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_detection_a8698e878994d59fd27019fe0fac6e711}{detect\+Features}} (const Mat \&image)=0
+\item 
+virtual void \mbox{\hyperlink{class_detection_a2591cff32dc48a96aabbcd2a08a9b55c}{write\+Features}} (const string \&filename) const =0
+\item 
+virtual void \mbox{\hyperlink{class_detection_a83db3aaacb49e1198596a29abce5a92e}{display\+Features}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ Vec4i $>$ \mbox{\hyperlink{class_detection_ac615247d29736fa601143f1c9deba5d2}{features}}
+\item 
+Mat \mbox{\hyperlink{class_detection_af8e357f77ac9dd05895b3b17d54494d9}{image\+With\+Features}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_detection_ae6896c01a66af0ea946a1399a4749450}\label{class_detection_ae6896c01a66af0ea946a1399a4749450} 
+\index{Detection@{Detection}!Detection@{Detection}}
+\index{Detection@{Detection}!Detection@{Detection}}
+\doxysubsubsection{\texorpdfstring{Detection()}{Detection()}}
+{\footnotesize\ttfamily Detection\+::\+Detection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\Hypertarget{class_detection_adefd1e376a1986e648ba96749c8b49d3}\label{class_detection_adefd1e376a1986e648ba96749c8b49d3} 
+\index{Detection@{Detection}!````~Detection@{\texorpdfstring{$\sim$}{\string~}Detection}}
+\index{````~Detection@{\texorpdfstring{$\sim$}{\string~}Detection}!Detection@{Detection}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Detection()}{\string~Detection()}}
+{\footnotesize\ttfamily virtual Detection\+::\texorpdfstring{$\sim$}{\string~}\+Detection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_detection_a8698e878994d59fd27019fe0fac6e711}\label{class_detection_a8698e878994d59fd27019fe0fac6e711} 
+\index{Detection@{Detection}!detectFeatures@{detectFeatures}}
+\index{detectFeatures@{detectFeatures}!Detection@{Detection}}
+\doxysubsubsection{\texorpdfstring{detectFeatures()}{detectFeatures()}}
+{\footnotesize\ttfamily virtual void Detection\+::detect\+Features (\begin{DoxyParamCaption}\item[{const Mat \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_corner_detection_a0a058ef0f622d2eeff75175bd078c15b}{Corner\+Detection}}.
+
+\Hypertarget{class_detection_a83db3aaacb49e1198596a29abce5a92e}\label{class_detection_a83db3aaacb49e1198596a29abce5a92e} 
+\index{Detection@{Detection}!displayFeatures@{displayFeatures}}
+\index{displayFeatures@{displayFeatures}!Detection@{Detection}}
+\doxysubsubsection{\texorpdfstring{displayFeatures()}{displayFeatures()}}
+{\footnotesize\ttfamily void Detection\+::display\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_corner_detection_aef1e1c9673a217360678f3e53156607c}{Corner\+Detection}}, and \mbox{\hyperlink{class_line_detection_a0742644570982ae229f8d8ecf90f4238}{Line\+Detection}}.
+
+\Hypertarget{class_detection_a2591cff32dc48a96aabbcd2a08a9b55c}\label{class_detection_a2591cff32dc48a96aabbcd2a08a9b55c} 
+\index{Detection@{Detection}!writeFeatures@{writeFeatures}}
+\index{writeFeatures@{writeFeatures}!Detection@{Detection}}
+\doxysubsubsection{\texorpdfstring{writeFeatures()}{writeFeatures()}}
+{\footnotesize\ttfamily void Detection\+::write\+Features (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_corner_detection_a32fff8db5fb6ff0db8b441313d9c5e45}{Corner\+Detection}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_detection_ac615247d29736fa601143f1c9deba5d2}\label{class_detection_ac615247d29736fa601143f1c9deba5d2} 
+\index{Detection@{Detection}!features@{features}}
+\index{features@{features}!Detection@{Detection}}
+\doxysubsubsection{\texorpdfstring{features}{features}}
+{\footnotesize\ttfamily vector$<$Vec4i$>$ Detection\+::features\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_detection_af8e357f77ac9dd05895b3b17d54494d9}\label{class_detection_af8e357f77ac9dd05895b3b17d54494d9} 
+\index{Detection@{Detection}!imageWithFeatures@{imageWithFeatures}}
+\index{imageWithFeatures@{imageWithFeatures}!Detection@{Detection}}
+\doxysubsubsection{\texorpdfstring{imageWithFeatures}{imageWithFeatures}}
+{\footnotesize\ttfamily Mat Detection\+::image\+With\+Features\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_detection_8h}{Detection.\+h}}\item 
+\mbox{\hyperlink{_detection_8cpp}{Detection.\+cpp}}\end{DoxyCompactItemize}

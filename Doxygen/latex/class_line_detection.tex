@@ -1,0 +1,195 @@
+\doxysection{Line\+Detection Class Reference}
+\hypertarget{class_line_detection}{}\label{class_line_detection}\index{LineDetection@{LineDetection}}
+
+
+{\ttfamily \#include $<$Line\+Detection.\+h$>$}
+
+Inheritance diagram for Line\+Detection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_line_detection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_line_detection_a1ef7eac86d7b5b23b967cf48880eb991}{Line\+Detection}} ()
+\item 
+\mbox{\hyperlink{class_line_detection_a654e5c9c3aec724b10a4f2efdd82b3c5}{\texorpdfstring{$\sim$}{\string~}\+Line\+Detection}} () override
+\item 
+void \mbox{\hyperlink{class_line_detection_ad270506091026985ee9d4e4cf75bedc6}{detect\+Features}} (const cv\+::\+Mat \&image) override
+\item 
+void \mbox{\hyperlink{class_line_detection_a6ae65f13932d7648185fbfde6285d4c3}{write\+Features}} (const std\+::string \&filename) const override
+\item 
+void \mbox{\hyperlink{class_line_detection_a0742644570982ae229f8d8ecf90f4238}{display\+Features}} () const override
+\item 
+int \mbox{\hyperlink{class_line_detection_aaeac405cc8f3114dd78dfecb66fafe7d}{get\+Low\+Threshold}} () const
+\item 
+int \mbox{\hyperlink{class_line_detection_ab5f7aa9e55a1e83af188e7f29d301998}{get\+High\+Threshold}} () const
+\item 
+int \mbox{\hyperlink{class_line_detection_ab676ff4c61271fc65ad377ba3347934a}{get\+Kernel\+Size}} () const
+\item 
+void \mbox{\hyperlink{class_line_detection_ab158cec8fb01b19f9126529a0b39341a}{set\+Low\+Threshold}} (int \mbox{\hyperlink{class_line_detection_a243103cc7896bd1663809cda7eba2600}{low\+Threshold}})
+\item 
+void \mbox{\hyperlink{class_line_detection_ad84d1afd57e4cb4107a3c25a64e4ea9b}{set\+High\+Threshold}} (int \mbox{\hyperlink{class_line_detection_ab77641a0129f8284d64f0482c35d8d57}{high\+Threshold}})
+\item 
+void \mbox{\hyperlink{class_line_detection_a29afe504432ad0173ef0af2fe4a74bf0}{set\+Kernel\+Size}} (int \mbox{\hyperlink{class_line_detection_ac0678add9ca77e61e98968b45c67c04f}{kernel\+Size}})
+\item 
+void \mbox{\hyperlink{class_line_detection_ac19780252886730677c6d537f9fe51d4}{detect\+Features\+With\+Trackbar}} (const Mat \&\mbox{\hyperlink{class_line_detection_af18ca3768d4cfe23fd2f83e6e3b7eeb2}{input\+Image}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_detection}{Detection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_detection_ae6896c01a66af0ea946a1399a4749450}{Detection}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_detection_adefd1e376a1986e648ba96749c8b49d3}{\texorpdfstring{$\sim$}{\string~}\+Detection}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_detection_a8698e878994d59fd27019fe0fac6e711}{detect\+Features}} (const Mat \&image)=0
+\item 
+virtual void \mbox{\hyperlink{class_detection_a2591cff32dc48a96aabbcd2a08a9b55c}{write\+Features}} (const string \&filename) const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_line_detection_a694357ee1cd1e5916fd0b22a952c4fb5}{Trackbar\+Callback}} (int, void \texorpdfstring{$\ast$}{*}userdata)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_line_detection_a243103cc7896bd1663809cda7eba2600}{low\+Threshold}}
+\item 
+int \mbox{\hyperlink{class_line_detection_ab77641a0129f8284d64f0482c35d8d57}{high\+Threshold}}
+\item 
+int \mbox{\hyperlink{class_line_detection_ac0678add9ca77e61e98968b45c67c04f}{kernel\+Size}}
+\item 
+Mat \mbox{\hyperlink{class_line_detection_af18ca3768d4cfe23fd2f83e6e3b7eeb2}{input\+Image}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_detection}{Detection}}}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ Vec4i $>$ \mbox{\hyperlink{class_detection_ac615247d29736fa601143f1c9deba5d2}{features}}
+\item 
+Mat \mbox{\hyperlink{class_detection_af8e357f77ac9dd05895b3b17d54494d9}{image\+With\+Features}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_line_detection_a1ef7eac86d7b5b23b967cf48880eb991}\label{class_line_detection_a1ef7eac86d7b5b23b967cf48880eb991} 
+\index{LineDetection@{LineDetection}!LineDetection@{LineDetection}}
+\index{LineDetection@{LineDetection}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{LineDetection()}{LineDetection()}}
+{\footnotesize\ttfamily Line\+Detection\+::\+Line\+Detection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_line_detection_a654e5c9c3aec724b10a4f2efdd82b3c5}\label{class_line_detection_a654e5c9c3aec724b10a4f2efdd82b3c5} 
+\index{LineDetection@{LineDetection}!````~LineDetection@{\texorpdfstring{$\sim$}{\string~}LineDetection}}
+\index{````~LineDetection@{\texorpdfstring{$\sim$}{\string~}LineDetection}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LineDetection()}{\string~LineDetection()}}
+{\footnotesize\ttfamily Line\+Detection\+::\texorpdfstring{$\sim$}{\string~}\+Line\+Detection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_line_detection_ad270506091026985ee9d4e4cf75bedc6}\label{class_line_detection_ad270506091026985ee9d4e4cf75bedc6} 
+\index{LineDetection@{LineDetection}!detectFeatures@{detectFeatures}}
+\index{detectFeatures@{detectFeatures}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{detectFeatures()}{detectFeatures()}}
+{\footnotesize\ttfamily void Line\+Detection\+::detect\+Features (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+\Hypertarget{class_line_detection_ac19780252886730677c6d537f9fe51d4}\label{class_line_detection_ac19780252886730677c6d537f9fe51d4} 
+\index{LineDetection@{LineDetection}!detectFeaturesWithTrackbar@{detectFeaturesWithTrackbar}}
+\index{detectFeaturesWithTrackbar@{detectFeaturesWithTrackbar}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{detectFeaturesWithTrackbar()}{detectFeaturesWithTrackbar()}}
+{\footnotesize\ttfamily void Line\+Detection\+::detect\+Features\+With\+Trackbar (\begin{DoxyParamCaption}\item[{const Mat \&}]{input\+Image }\end{DoxyParamCaption})}
+
+\Hypertarget{class_line_detection_a0742644570982ae229f8d8ecf90f4238}\label{class_line_detection_a0742644570982ae229f8d8ecf90f4238} 
+\index{LineDetection@{LineDetection}!displayFeatures@{displayFeatures}}
+\index{displayFeatures@{displayFeatures}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{displayFeatures()}{displayFeatures()}}
+{\footnotesize\ttfamily void Line\+Detection\+::display\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_detection_a83db3aaacb49e1198596a29abce5a92e}{Detection}}.
+
+\Hypertarget{class_line_detection_ab5f7aa9e55a1e83af188e7f29d301998}\label{class_line_detection_ab5f7aa9e55a1e83af188e7f29d301998} 
+\index{LineDetection@{LineDetection}!getHighThreshold@{getHighThreshold}}
+\index{getHighThreshold@{getHighThreshold}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{getHighThreshold()}{getHighThreshold()}}
+{\footnotesize\ttfamily int Line\+Detection\+::get\+High\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_line_detection_ab676ff4c61271fc65ad377ba3347934a}\label{class_line_detection_ab676ff4c61271fc65ad377ba3347934a} 
+\index{LineDetection@{LineDetection}!getKernelSize@{getKernelSize}}
+\index{getKernelSize@{getKernelSize}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{getKernelSize()}{getKernelSize()}}
+{\footnotesize\ttfamily int Line\+Detection\+::get\+Kernel\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_line_detection_aaeac405cc8f3114dd78dfecb66fafe7d}\label{class_line_detection_aaeac405cc8f3114dd78dfecb66fafe7d} 
+\index{LineDetection@{LineDetection}!getLowThreshold@{getLowThreshold}}
+\index{getLowThreshold@{getLowThreshold}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{getLowThreshold()}{getLowThreshold()}}
+{\footnotesize\ttfamily int Line\+Detection\+::get\+Low\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_line_detection_ad84d1afd57e4cb4107a3c25a64e4ea9b}\label{class_line_detection_ad84d1afd57e4cb4107a3c25a64e4ea9b} 
+\index{LineDetection@{LineDetection}!setHighThreshold@{setHighThreshold}}
+\index{setHighThreshold@{setHighThreshold}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{setHighThreshold()}{setHighThreshold()}}
+{\footnotesize\ttfamily void Line\+Detection\+::set\+High\+Threshold (\begin{DoxyParamCaption}\item[{int}]{high\+Threshold }\end{DoxyParamCaption})}
+
+\Hypertarget{class_line_detection_a29afe504432ad0173ef0af2fe4a74bf0}\label{class_line_detection_a29afe504432ad0173ef0af2fe4a74bf0} 
+\index{LineDetection@{LineDetection}!setKernelSize@{setKernelSize}}
+\index{setKernelSize@{setKernelSize}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{setKernelSize()}{setKernelSize()}}
+{\footnotesize\ttfamily void Line\+Detection\+::set\+Kernel\+Size (\begin{DoxyParamCaption}\item[{int}]{kernel\+Size }\end{DoxyParamCaption})}
+
+\Hypertarget{class_line_detection_ab158cec8fb01b19f9126529a0b39341a}\label{class_line_detection_ab158cec8fb01b19f9126529a0b39341a} 
+\index{LineDetection@{LineDetection}!setLowThreshold@{setLowThreshold}}
+\index{setLowThreshold@{setLowThreshold}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{setLowThreshold()}{setLowThreshold()}}
+{\footnotesize\ttfamily void Line\+Detection\+::set\+Low\+Threshold (\begin{DoxyParamCaption}\item[{int}]{low\+Threshold }\end{DoxyParamCaption})}
+
+\Hypertarget{class_line_detection_a694357ee1cd1e5916fd0b22a952c4fb5}\label{class_line_detection_a694357ee1cd1e5916fd0b22a952c4fb5} 
+\index{LineDetection@{LineDetection}!TrackbarCallback@{TrackbarCallback}}
+\index{TrackbarCallback@{TrackbarCallback}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{TrackbarCallback()}{TrackbarCallback()}}
+{\footnotesize\ttfamily void Line\+Detection\+::\+Trackbar\+Callback (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{void \texorpdfstring{$\ast$}{*}}]{userdata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_line_detection_a6ae65f13932d7648185fbfde6285d4c3}\label{class_line_detection_a6ae65f13932d7648185fbfde6285d4c3} 
+\index{LineDetection@{LineDetection}!writeFeatures@{writeFeatures}}
+\index{writeFeatures@{writeFeatures}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{writeFeatures()}{writeFeatures()}}
+{\footnotesize\ttfamily void Line\+Detection\+::write\+Features (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_line_detection_ab77641a0129f8284d64f0482c35d8d57}\label{class_line_detection_ab77641a0129f8284d64f0482c35d8d57} 
+\index{LineDetection@{LineDetection}!highThreshold@{highThreshold}}
+\index{highThreshold@{highThreshold}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{highThreshold}{highThreshold}}
+{\footnotesize\ttfamily int Line\+Detection\+::high\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_line_detection_af18ca3768d4cfe23fd2f83e6e3b7eeb2}\label{class_line_detection_af18ca3768d4cfe23fd2f83e6e3b7eeb2} 
+\index{LineDetection@{LineDetection}!inputImage@{inputImage}}
+\index{inputImage@{inputImage}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{inputImage}{inputImage}}
+{\footnotesize\ttfamily Mat Line\+Detection\+::input\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_line_detection_ac0678add9ca77e61e98968b45c67c04f}\label{class_line_detection_ac0678add9ca77e61e98968b45c67c04f} 
+\index{LineDetection@{LineDetection}!kernelSize@{kernelSize}}
+\index{kernelSize@{kernelSize}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{kernelSize}{kernelSize}}
+{\footnotesize\ttfamily int Line\+Detection\+::kernel\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_line_detection_a243103cc7896bd1663809cda7eba2600}\label{class_line_detection_a243103cc7896bd1663809cda7eba2600} 
+\index{LineDetection@{LineDetection}!lowThreshold@{lowThreshold}}
+\index{lowThreshold@{lowThreshold}!LineDetection@{LineDetection}}
+\doxysubsubsection{\texorpdfstring{lowThreshold}{lowThreshold}}
+{\footnotesize\ttfamily int Line\+Detection\+::low\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_line_detection_8h}{Line\+Detection.\+h}}\item 
+\mbox{\hyperlink{_line_detection_8cpp}{Line\+Detection.\+cpp}}\end{DoxyCompactItemize}

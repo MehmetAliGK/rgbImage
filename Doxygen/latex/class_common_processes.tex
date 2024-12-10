@@ -1,0 +1,99 @@
+\doxysection{Common\+Processes Class Reference}
+\hypertarget{class_common_processes}{}\label{class_common_processes}\index{CommonProcesses@{CommonProcesses}}
+
+
+{\ttfamily \#include $<$Common\+Processes.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_common_processes_acc9003ac5133931445e77f7663c73602}{Common\+Processes}} (const string \&filename)
+\item 
+void \mbox{\hyperlink{class_common_processes_adcc83669406a1c8c5cb5f284948b54f1}{display\+Image}} () const
+\item 
+void \mbox{\hyperlink{class_common_processes_a51981a9a12906abc90c58e7e7d3143aa}{write\+Image}} (const string \&filename)
+\item 
+void \mbox{\hyperlink{class_common_processes_aaaf2ff183f15bfdd35323302e3b994db}{rescale\+Image}} (double scale)
+\item 
+void \mbox{\hyperlink{class_common_processes_a6137f7b5432f605cf46ee1f40a71a692}{filter\+Noise}} ()
+\item 
+void \mbox{\hyperlink{class_common_processes_a4ba209de835275fc3315a23916153fdf}{convert\+To\+Grayscale}} ()
+\item 
+const Mat \& \mbox{\hyperlink{class_common_processes_a7bc9b145a8bd558af3b08311a158bad5}{get\+Image}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Mat \mbox{\hyperlink{class_common_processes_a50fef69557b2580a8c80ba8b869981be}{image}}
+\item 
+Mat \mbox{\hyperlink{class_common_processes_a1c7efda1418a20e90d3ec7c8b7a45455}{raw\+Image}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_common_processes_acc9003ac5133931445e77f7663c73602}\label{class_common_processes_acc9003ac5133931445e77f7663c73602} 
+\index{CommonProcesses@{CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\index{CommonProcesses@{CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{CommonProcesses()}{CommonProcesses()}}
+{\footnotesize\ttfamily Common\+Processes\+::\+Common\+Processes (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_common_processes_a4ba209de835275fc3315a23916153fdf}\label{class_common_processes_a4ba209de835275fc3315a23916153fdf} 
+\index{CommonProcesses@{CommonProcesses}!convertToGrayscale@{convertToGrayscale}}
+\index{convertToGrayscale@{convertToGrayscale}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{convertToGrayscale()}{convertToGrayscale()}}
+{\footnotesize\ttfamily void Common\+Processes\+::convert\+To\+Grayscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_common_processes_adcc83669406a1c8c5cb5f284948b54f1}\label{class_common_processes_adcc83669406a1c8c5cb5f284948b54f1} 
+\index{CommonProcesses@{CommonProcesses}!displayImage@{displayImage}}
+\index{displayImage@{displayImage}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{displayImage()}{displayImage()}}
+{\footnotesize\ttfamily void Common\+Processes\+::display\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_common_processes_a6137f7b5432f605cf46ee1f40a71a692}\label{class_common_processes_a6137f7b5432f605cf46ee1f40a71a692} 
+\index{CommonProcesses@{CommonProcesses}!filterNoise@{filterNoise}}
+\index{filterNoise@{filterNoise}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{filterNoise()}{filterNoise()}}
+{\footnotesize\ttfamily void Common\+Processes\+::filter\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_common_processes_a7bc9b145a8bd558af3b08311a158bad5}\label{class_common_processes_a7bc9b145a8bd558af3b08311a158bad5} 
+\index{CommonProcesses@{CommonProcesses}!getImage@{getImage}}
+\index{getImage@{getImage}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{getImage()}{getImage()}}
+{\footnotesize\ttfamily const cv\+::\+Mat \& Common\+Processes\+::get\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_common_processes_aaaf2ff183f15bfdd35323302e3b994db}\label{class_common_processes_aaaf2ff183f15bfdd35323302e3b994db} 
+\index{CommonProcesses@{CommonProcesses}!rescaleImage@{rescaleImage}}
+\index{rescaleImage@{rescaleImage}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{rescaleImage()}{rescaleImage()}}
+{\footnotesize\ttfamily void Common\+Processes\+::rescale\+Image (\begin{DoxyParamCaption}\item[{double}]{scale }\end{DoxyParamCaption})}
+
+\Hypertarget{class_common_processes_a51981a9a12906abc90c58e7e7d3143aa}\label{class_common_processes_a51981a9a12906abc90c58e7e7d3143aa} 
+\index{CommonProcesses@{CommonProcesses}!writeImage@{writeImage}}
+\index{writeImage@{writeImage}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{writeImage()}{writeImage()}}
+{\footnotesize\ttfamily void Common\+Processes\+::write\+Image (\begin{DoxyParamCaption}\item[{const string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_common_processes_a50fef69557b2580a8c80ba8b869981be}\label{class_common_processes_a50fef69557b2580a8c80ba8b869981be} 
+\index{CommonProcesses@{CommonProcesses}!image@{image}}
+\index{image@{image}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily Mat Common\+Processes\+::image\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_common_processes_a1c7efda1418a20e90d3ec7c8b7a45455}\label{class_common_processes_a1c7efda1418a20e90d3ec7c8b7a45455} 
+\index{CommonProcesses@{CommonProcesses}!rawImage@{rawImage}}
+\index{rawImage@{rawImage}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{rawImage}{rawImage}}
+{\footnotesize\ttfamily Mat Common\+Processes\+::raw\+Image\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_common_processes_8h}{Common\+Processes.\+h}}\item 
+\mbox{\hyperlink{_common_processes_8cpp}{Common\+Processes.\+cpp}}\end{DoxyCompactItemize}
