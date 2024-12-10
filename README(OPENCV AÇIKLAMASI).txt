@@ -1,1 +1,0 @@
-Hocam dosya boyutu fazla olmaması için opencv dosyalarını gönderemiyorum. Bu haliyle açıldığında opencv dll hatası veriyor. Proje dosyalarının olduğu klasöre opencv dosyalarını kopyaladığınızda çalışıyor.
